@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/music"><img src="file:///Users/gohi94/Downloads/Bootstrap%204%20Site%20Files/Bootstrap%204%20Site%20Files/img/logo.png"></a>
+	</div>
+</nav>
+
+<% music.forEach(function (post){ %>
+	
+				<div>
+					<h2><%= post.name %></h2>
+				</div>
+				<div>
+					<img src="<%= post.image %>">
+				</div>
+				<div>
+					<p><%= post.content %></p>
+				</div>
+<% }) %>
+
+<%- include("partials/footer") %>

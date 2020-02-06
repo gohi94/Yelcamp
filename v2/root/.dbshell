@@ -1,0 +1,51 @@
+show dbs
+show dbs
+clear
+use demo
+db.dogs.insert({name:"Shutlz", breed:"Doberman"})
+show collections
+db.dogs.find()
+db.dogs.insert({name:"Marta", breed:"Pastor"})
+db.dogs.find()
+db.dogs.find({name:"Shultz"})
+db.dogs.find({name:"Shutlz"})
+db.dogs.insert({name:"Jungkook", breed:"Humanos más guapo del mundo"})
+db.dogs.fin({name: "Jungkook"})
+db.dogs.find({name: "Jungkook"})
+db.dogs.update({name:"Jungkook"}, {$set: {isCute: true}})
+db.dogs.find()
+db.dogs.update({name:"Jungkook"}, {$set: {name: "Kiara"}})
+db.dogs.find()
+db.dogs.update({name: "Kiara"}, {$set: {breed: "Pastor"}})
+db.dogs.find()
+use db
+db.dogs.find()
+show dbs
+db.dogs.insert({name: "Shultz", breed: "Doberman"})
+db.dogs.insert({name: "Kiara", breed: "Pastor", isCute: true})
+db.dogs.insert({name: "Rusty", breed: "Labrador"})
+db.dogs.find()
+db.dogs.update({name: "Shutlz", {$set: name: "Dzudzi"}})
+db.dogs.update({name: "Shultz", {$set: name: "Dzudzi"}})
+db.dogs.update({name: "Shultz"}, {$set: {name: "Dzudzi", isPesado: true}})
+db.dogs.find()
+show dbs
+db.bts.insert({name: "Jungkook", age: "22", isCute: true})
+db.bts.insert({name: "Tahyung", age: "24", isSexy: true})
+db.bts.insert({name: "Jimin", age: "24", isMochi: true})
+show dbs
+db.bts.find()
+db.bts.remove({age: 24}).limit(1)
+db.bts.remove({age: 24})
+db.bts.remove({age: "24"})
+show dbs
+db.bts.find()
+show dbs
+use cat_app
+show collections
+db.cats.find()
+show dbs
+show dbs
+use cat_app
+show collections
+db.cats.find()
